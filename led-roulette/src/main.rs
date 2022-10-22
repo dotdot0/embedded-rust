@@ -14,7 +14,7 @@ use microbit::{
 };
 
 const PIXEL: [(usize, usize); 16] = [
-    (0,0), (0,1), (0,2), (0,3), (0,4), (1,4), (2,4), (3,4), (4,4),
+    (0,0), (0,1), (0,2), (0,3), (0,4), (2,4), (1,4), (3,4), (0,4),
     (4,3), (4,2), (4,1), (4,0), (3,0), (2,0), (1,0)
 ];
 
@@ -41,7 +41,7 @@ fn main() -> ! {
             leds[second_last.0][second_last.1] = 0;
             leds[last_led.0][last_led.1] = 1;
             leds[current_led.0][current_led.1] = 1;
-            display.show(&mut timer, leds, 200);
+            display.show(&mut timer, leds, 500);
             rprintln!("{:?}, {:?}", current_led, last_led);
             second_last = last_led;
             last_led = *current_led;
