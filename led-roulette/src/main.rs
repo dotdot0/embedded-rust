@@ -42,7 +42,7 @@ fn main() -> ! {
             leds[last_led.0][last_led.1] = 1;
             leds[current_led.0][current_led.1] = 1;
             display.show(&mut timer, leds, 200);
-            rprintln!("{:?}", current_led);
+            rprintln!("{:?}, {:?}", current_led, last_led);
             second_last = last_led;
             last_led = *current_led;
         }
