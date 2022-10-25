@@ -1,1 +1,1 @@
-# I2C
+# Compass
