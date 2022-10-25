@@ -56,20 +56,28 @@ fn main() -> ! {
         let dir = if theta < -7. * PI / 8. {
             Direction::West
         } else if theta < -5. * PI / 8. {
+            rprintln!("{}", theta);
             Direction::SouthWest
         } else if theta < -3. * PI / 8. {
+            rprintln!("{}", theta);
             Direction::South
         } else if theta < -PI / 8. {
+            rprintln!("{}", theta);
             Direction::SouthEast
         } else if theta < PI / 8. {
+            rprintln!("{}", theta);
             Direction::East
         } else if theta < 3. * PI / 8. {
+            rprintln!("{}", theta);
             Direction::NorthEast
         } else if theta < 5. * PI / 8. {
+            rprintln!("{}", theta);
             Direction::North
         } else if theta < 7. * PI / 8. {
+            rprintln!("{}", theta);
             Direction::NorthWest
         } else {
+            rprintln!("{}", theta);
             Direction::West
         };
 
